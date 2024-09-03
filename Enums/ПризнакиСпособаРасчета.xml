@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="9376acd8-dad9-4484-ab6d-cb15c3363209">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ПризнакиСпособаРасчета" category="Ref">
+				<xr:TypeId>4d920e13-2876-4d4e-ba48-95abc57ec838</xr:TypeId>
+				<xr:ValueId>13924eb2-ae9f-447f-9185-06e202ddff0b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ПризнакиСпособаРасчета" category="Manager">
+				<xr:TypeId>67ad8f74-1955-4563-812b-c1cc222e9b61</xr:TypeId>
+				<xr:ValueId>e20dacc7-9a7a-4bee-a43d-554c37f021ed</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ПризнакиСпособаРасчета" category="List">
+				<xr:TypeId>6f60bcd1-49ad-4608-b092-bb6b8a280823</xr:TypeId>
+				<xr:ValueId>3e59135e-4445-4cf8-a48d-31a847b548e7</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПризнакиСпособаРасчета</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Признаки способа расчета</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Order">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="6cad9334-da52-48e1-ae0e-b247a029722c">
+				<Properties>
+					<Name>Аванс</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аванс</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Аванс</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ed6ab1ae-cde0-42f1-9f5b-06c31e9d2e93">
+				<Properties>
+					<Name>ОплатаКредита</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оплата кредита</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Оплата предмета расчета после его передачи с оплатой в кредит (оплата кредита) </Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="fb506938-99d4-4660-b201-fb9243e9f89a">
+				<Properties>
+					<Name>ПередачаБезОплаты</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Передача без оплаты</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Передача предмета расчета без его оплаты в момент его передачи с последующей оплатой в кредит</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f548f487-6e06-4196-b4cf-930564575d2a">
+				<Properties>
+					<Name>ПередачаСПолнойОплатой</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Передача с полной оплатой</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Полная оплата, в том числе с учетом аванса (предварительной оплаты) в момент передачи предмета расчета</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="85e20036-f189-468a-a006-658101d2586a">
+				<Properties>
+					<Name>ПередачаСЧастичнойОплатой</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Передача с частичной оплатой</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Частичная оплата предмета расчета в момент его передачи с последующей оплатой в кредит </Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e818a769-123d-48dd-8cd4-8118a9c83c97">
+				<Properties>
+					<Name>ПредоплатаПолная</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предоплата полная</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Полная предварительная оплата до момента передачи предмета расчета</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ae3e0f1f-a520-4e75-9cb6-43e5c5064539">
+				<Properties>
+					<Name>ПредоплатаЧастичная</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предоплата частичная</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Частичная предварительная оплата до момента передачи предмета расчета</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

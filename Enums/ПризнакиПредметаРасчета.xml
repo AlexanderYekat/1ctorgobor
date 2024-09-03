@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="aaa02e85-b6c0-4b0e-8cf7-b487f530eabd">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ПризнакиПредметаРасчета" category="Ref">
+				<xr:TypeId>4ce94ab4-7042-4564-9668-7cf7d406a993</xr:TypeId>
+				<xr:ValueId>a6b7fd90-039f-4710-82a4-b685a0a5212f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ПризнакиПредметаРасчета" category="Manager">
+				<xr:TypeId>9d6264ef-9ff1-469e-b829-69d7799ac054</xr:TypeId>
+				<xr:ValueId>e9dd8f18-ba5b-4e89-b5d4-c9b3f120a6c7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ПризнакиПредметаРасчета" category="List">
+				<xr:TypeId>49597133-3ac2-4d1b-857b-0d7e649f057c</xr:TypeId>
+				<xr:ValueId>6968fa58-bb39-4de5-a3c6-4a59e1a50a94</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПризнакиПредметаРасчета</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Признаки предмета расчета</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Order">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="9936b264-9baa-4dc1-99ba-b457b2e1c2c7">
+				<Properties>
+					<Name>Товар</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товар</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Реализуемый товар, за исключением подакцизного товара</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ac0afdfe-27f1-4bfc-a630-97d20e5f9893">
+				<Properties>
+					<Name>ПодакцизныйТовар</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подакцизный товар</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Реализуемый подакцизный товар</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9c640daa-f833-4242-b15a-4b68f0798ba2">
+				<Properties>
+					<Name>Работа</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Работа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Выполняемая работа</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="268ee88d-0851-4802-b83c-8d25f4193f42">
+				<Properties>
+					<Name>Услуга</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Услуга</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Оказываемая услуга</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="53ac3a51-dd4a-4c7b-8d21-f2fa11c1ac6e">
+				<Properties>
+					<Name>СтавкаАзартнойИгры</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ставка азартной игры</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Прием ставок при осуществлении деятельности по проведению азартных игр</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e5f7eeaa-a3ab-42d8-83e5-5ab8179a1c1f">
+				<Properties>
+					<Name>ВыигрышАзартнойИгры</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выигрыш азартной игры</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Выплата денежных средств в виде выигрыша при осуществлении деятельности по проведению азартных игр</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="91a809e3-ed44-4347-94fe-722b6ad46da2">
+				<Properties>
+					<Name>ЛотерейныйБилет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лотерейный билет</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Прием денежных средств при реализации лотерейных билетов</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d772ec67-c7f3-4cbd-ab50-8efe96faea6c">
+				<Properties>
+					<Name>ВыигрышЛотереи</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выигрыш лотереи</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Выплата денежных средств в виде выигрыша при осуществлении деятельности по проведению лотерей</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="fff77c4f-dad6-4e3e-889c-71bcc2391cd6">
+				<Properties>
+					<Name>ПредоставлениеРИД</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предоставление РИД</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Предоставлении прав на использование результатов интеллектуальной деятельности или средств индивидуализации</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1a9310ed-b242-49a1-a640-9594ad6bf5d9">
+				<Properties>
+					<Name>ПлатежВыплата</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Платеж выплата</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Аванс, задаток, предоплата, кредит, взнос в счет оплаты, пени, штраф, вознаграждение, бонус и ином аналогичном предмете расчета</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="33ac66b3-6d1a-4460-b799-05bd1e96ef43">
+				<Properties>
+					<Name>АгентскоеВознаграждение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Агентское вознаграждение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Вознагражденин пользователя, являющегося платежным агентом (субагентом), банковским платежным агентом (субагентом), комиссионером, поверенным или иным агентом</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f99dc73d-3e01-45e2-9be9-b32abb858ed9">
+				<Properties>
+					<Name>СоставнойПредметРасчета</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Составной предмет расчета</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Предмет расчета, состоящем из предметов, каждому из которых может быть присвоено другие значения перечисления</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9da2fd2b-d0a8-4a45-9a94-73cc5cb4eafa">
+				<Properties>
+					<Name>ИнойПредметРасчета</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Иной предмет расчета</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Предмет расчета,  не относящемуся к предметам расчета, которым может быть присвоено значение перечисления</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="509c03c1-98e7-4eb2-9317-e2835349c7e8">
+				<Properties>
+					<Name>ИмущественноеПраво</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имущественное право</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Передача имущественных прав</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b3d8e4a5-b05a-4e53-bc8b-014fea317e3a">
+				<Properties>
+					<Name>ВнереализационныйДоход</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Внереализационный доход</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Внереализационный доход</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="eeea9872-ad22-4bdd-8554-6fc4575ac0d3">
+				<Properties>
+					<Name>СтраховыеВзносы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страховые взносы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Сумма расходов, уменьшающих сумму налога (авансовых платежей) в соответствии с пунктом 3.1 статьи 346.21 Налогового кодекса РФ</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="bc322df7-28d2-495e-9e75-e512286dcec9">
+				<Properties>
+					<Name>ТорговыйСбор</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Торговый сбор</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Сумма уплаченного торгового сбора</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="67d78101-7b16-4a0c-96a7-a0edcf1b9956">
+				<Properties>
+					<Name>КурортныйСбор</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Курортный сбор</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Курортный сбор</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6f7d6674-79be-46eb-9f83-12f26fefdae2">
+				<Properties>
+					<Name>Залог</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Залог</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Залог</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6f2a5e82-b8c9-4619-879c-a180fb861a84">
+				<Properties>
+					<Name>Платеж</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Платеж</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Об авансе, задатке, предоплате и кредите</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="feb8231a-de58-4fac-bcf2-c00ea779ca54">
+				<Properties>
+					<Name>Выплата</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выплата</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>О взносе в счет оплаты пени, штрафе, вознаграждении, бонусе и ином аналогичном предмете расчета</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="09bb3ce2-8336-407c-9327-7b2a22f2c6cc">
+				<Properties>
+					<Name>Расход</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расход</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>О суммах произведенных расходов в соответствии со статьей 346.16 Налогового кодекса Российской Федерации, уменьшающих доход</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="52240cf1-a520-4a59-9fd3-72923b8acf45">
+				<Properties>
+					<Name>ОбязательноеПенсионноеСтрахованиеИП</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Взносы на ОПС ИП</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>О страховых взносах на обязательное пенсионное страхование, уплачиваемых ИП, не производящими выплаты и иные вознаграждения физическим лицам</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0aa4abc0-0df6-453e-86f6-f4e4625f287d">
+				<Properties>
+					<Name>ОбязательноеПенсионноеСтрахование</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Взносы на ОПС</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>О страховых взносах на обязательное пенсионное страхование, уплачиваемых организациями и ИП, производящими выплаты и иные вознаграждения физическим лицам</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8f8a97a0-8100-4891-a01c-37fdcae94584">
+				<Properties>
+					<Name>ОбязательноеМедицинскоеСтрахованиеИП</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Взносы на ОМС ИП</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>О страховых взносах на обязательное медицинское страхование, уплачиваемых ИП, не производящими выплаты и иные вознаграждения физическим лицам</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8dd008ec-059a-4c15-8b22-9b344a507abb">
+				<Properties>
+					<Name>ОбязательноеМедицинскоеСтрахование</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Взносы на ОМС</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>О страховых взносах на обязательное медицинское страхование, уплачиваемые организациями и ИП, производящими выплаты и иные вознаграждения физическим лицам</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="67aa4951-f368-4b4c-a305-ae59076de39f">
+				<Properties>
+					<Name>ОбязательноеСоциальноеСтрахование</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Взносы на ОСС</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>О страховых взносах на обязательное социальное страхование на случай временной нетрудоспособности и в связи с материнством, на обязательное социальное страхование от несчастных случаев на производстве и профессиональных заболеваний</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ce9b3256-5592-433b-bb3b-439f9964420b">
+				<Properties>
+					<Name>ПлатежКазино</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Платеж казино</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>О приеме и выплате денежных средств при осуществлении деятельности казино с использованием обменных знаков казино, зале игровых автоматов</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

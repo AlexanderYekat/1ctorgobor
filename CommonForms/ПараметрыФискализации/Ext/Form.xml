@@ -1,0 +1,1083 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Параметры фискализации</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Popup name="РучноеУправление" id="110">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Ручное управление</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Ручное управление</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="РучноеУправлениеРасширеннаяПодсказка" id="154"/>
+				<ChildItems>
+					<Button name="ОткрытьСмену" id="113">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаОткрытьСмену</CommandName>
+						<ExtendedTooltip name="ОткрытьСменуРасширеннаяПодсказка" id="155"/>
+					</Button>
+					<Button name="ЗакрытьСмену" id="114">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаЗакрытьСмену</CommandName>
+						<ExtendedTooltip name="ЗакрытьСменуРасширеннаяПодсказка" id="156"/>
+					</Button>
+					<Button name="Внесение" id="111">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаВнесение</CommandName>
+						<ExtendedTooltip name="ВнесениеРасширеннаяПодсказка" id="157"/>
+					</Button>
+					<Button name="Выемка" id="112">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаВыемка</CommandName>
+						<ExtendedTooltip name="ВыемкаРасширеннаяПодсказка" id="158"/>
+					</Button>
+					<Button name="ОткрытьДенежныйЯщик" id="146">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаОткрытьДенежныйЯщик</CommandName>
+						<ExtendedTooltip name="ОткрытьДенежныйЯщикРасширеннаяПодсказка" id="159"/>
+					</Button>
+					<Button name="ПолучитьТекущееСостояние" id="115">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаПолучитьТекущееСостояние</CommandName>
+						<ExtendedTooltip name="ПолучитьТекущееСостояниеРасширеннаяПодсказка" id="160"/>
+					</Button>
+					<Button name="ОтчетОСостоянииРасчетов" id="116">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаОтчетОСостоянииРасчетов</CommandName>
+						<ExtendedTooltip name="ОтчетОСостоянииРасчетовРасширеннаяПодсказка" id="161"/>
+					</Button>
+					<Button name="ОтчетБезГашения" id="117">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаОтчетБезГашения</CommandName>
+						<ExtendedTooltip name="ОтчетБезГашенияРасширеннаяПодсказка" id="162"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОрганизация" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа организация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа организация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаОрганизацияРасширеннаяПодсказка" id="163"/>
+		</UsualGroup>
+		<InputField name="ФискальноеУстройство" id="53">
+			<DataPath>ФискальноеУстройство</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ChoiceButton>false</ChoiceButton>
+			<OpenButton>false</OpenButton>
+			<TextEdit>false</TextEdit>
+			<ContextMenu name="ФискальноеУстройствоКонтекстноеМеню" id="54"/>
+			<ExtendedTooltip name="ФискальноеУстройствоРасширеннаяПодсказка" id="164"/>
+		</InputField>
+		<UsualGroup name="ГруппаОперация" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа операция</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа операция</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОперацияРасширеннаяПодсказка" id="165"/>
+			<ChildItems>
+				<InputField name="РегистрационныйНомерККТ" id="47">
+					<DataPath>РегистрационныйНомерККТ</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="РегистрационныйНомерККТКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="РегистрационныйНомерККТРасширеннаяПодсказка" id="166"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРеквизитыОрганизации" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реквизиты организации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа реквизиты организации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаРеквизитыОрганизацииРасширеннаяПодсказка" id="167"/>
+			<ChildItems>
+				<InputField name="ОрганизацияНазвание" id="1">
+					<DataPath>ОрганизацияНазвание</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Width>40</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ОрганизацияНазваниеКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ОрганизацияНазваниеРасширеннаяПодсказка" id="168"/>
+				</InputField>
+				<InputField name="ОрганизацияИНН" id="4">
+					<DataPath>ОрганизацияИНН</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ОрганизацияИННКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ОрганизацияИННРасширеннаяПодсказка" id="169"/>
+				</InputField>
+				<InputField name="АдресУстановкиККТ" id="17">
+					<DataPath>АдресУстановкиККТ</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Height>2</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<ContextMenu name="АдресУстановкиККТКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="АдресУстановкиККТРасширеннаяПодсказка" id="170"/>
+				</InputField>
+				<InputField name="МестоПроведенияРасчетов" id="118">
+					<DataPath>МестоПроведенияРасчетов</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Height>2</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<ContextMenu name="МестоПроведенияРасчетовКонтекстноеМеню" id="119"/>
+					<ExtendedTooltip name="МестоПроведенияРасчетовРасширеннаяПодсказка" id="171"/>
+				</InputField>
+				<UsualGroup name="СистемыНалогообложения" id="97">
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Системы налогообложения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Системы налогообложения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="СистемыНалогообложенияРасширеннаяПодсказка" id="172"/>
+					<ChildItems>
+						<UsualGroup name="КодыСистемыНалогообложенияГ1" id="73">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Коды системы налогообложения г1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="КодыСистемыНалогообложенияГ1РасширеннаяПодсказка" id="173"/>
+							<ChildItems>
+								<CheckBoxField name="КодыСистемыНалогообложения0" id="75">
+									<DataPath>КодыСистемыНалогообложения0</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КодыСистемыНалогообложения0КонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="КодыСистемыНалогообложения0РасширеннаяПодсказка" id="174"/>
+								</CheckBoxField>
+								<CheckBoxField name="КодыСистемыНалогообложения1" id="78">
+									<DataPath>КодыСистемыНалогообложения1</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КодыСистемыНалогообложения1КонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="КодыСистемыНалогообложения1РасширеннаяПодсказка" id="175"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="КодыСистемыНалогообложенияГ2" id="93">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Коды системы налогообложения г1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="КодыСистемыНалогообложенияГ2РасширеннаяПодсказка" id="176"/>
+							<ChildItems>
+								<CheckBoxField name="КодыСистемыНалогообложения2" id="81">
+									<DataPath>КодыСистемыНалогообложения2</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КодыСистемыНалогообложения2КонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="КодыСистемыНалогообложения2РасширеннаяПодсказка" id="177"/>
+								</CheckBoxField>
+								<CheckBoxField name="КодыСистемыНалогообложения3" id="99">
+									<DataPath>КодыСистемыНалогообложения3</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КодыСистемыНалогообложения3КонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="КодыСистемыНалогообложения3РасширеннаяПодсказка" id="178"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="КодыСистемыНалогообложенияГ3" id="95">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Коды системы налогообложения г1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="КодыСистемыНалогообложенияГ3РасширеннаяПодсказка" id="179"/>
+							<ChildItems>
+								<CheckBoxField name="КодыСистемыНалогообложения4" id="102">
+									<DataPath>КодыСистемыНалогообложения4</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КодыСистемыНалогообложения4КонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="КодыСистемыНалогообложения4РасширеннаяПодсказка" id="180"/>
+								</CheckBoxField>
+								<CheckBoxField name="КодыСистемыНалогообложения5" id="105">
+									<DataPath>КодыСистемыНалогообложения5</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КодыСистемыНалогообложения5КонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="КодыСистемыНалогообложения5РасширеннаяПодсказка" id="181"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНастройкиККТ" id="120">
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка ККТ</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаНастройкиККТРасширеннаяПодсказка" id="182"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНастройкиККТ10" id="121">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки ККТ10</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкиККТ10РасширеннаяПодсказка" id="183"/>
+					<ChildItems>
+						<CheckBoxField name="ПризнакАвтономногоРежима" id="122">
+							<DataPath>ПризнакАвтономногоРежима</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПризнакАвтономногоРежимаКонтекстноеМеню" id="123"/>
+							<ExtendedTooltip name="ПризнакАвтономногоРежимаРасширеннаяПодсказка" id="184"/>
+						</CheckBoxField>
+						<CheckBoxField name="ПризнакРасчетовЗаУслуги" id="124">
+							<DataPath>ПризнакРасчетовЗаУслуги</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПризнакРасчетовЗаУслугиКонтекстноеМеню" id="125"/>
+							<ExtendedTooltip name="ПризнакРасчетовЗаУслугиРасширеннаяПодсказка" id="185"/>
+						</CheckBoxField>
+						<CheckBoxField name="ПризнакФормированияТолькоБСО" id="126">
+							<DataPath>ПризнакФормированияТолькоБСО</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПризнакФормированияТолькоБСОКонтекстноеМеню" id="127"/>
+							<ExtendedTooltip name="ПризнакФормированияТолькоБСОРасширеннаяПодсказка" id="186"/>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаАвтоматическогоРежима" id="128">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАвтоматическогоРежимаРасширеннаяПодсказка" id="187"/>
+							<ChildItems>
+								<CheckBoxField name="ПризнакАвтоматическогоРежима" id="129">
+									<DataPath>ПризнакАвтоматическогоРежима</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПризнакАвтоматическогоРежимаКонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="ПризнакАвтоматическогоРежимаРасширеннаяПодсказка" id="188"/>
+								</CheckBoxField>
+								<InputField name="НомерАвтоматаДляАвтоматическогоРежима" id="131">
+									<DataPath>НомерАвтоматаДляАвтоматическогоРежима</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Номер автомата</v8:content>
+										</v8:item>
+									</Title>
+									<Width>20</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="НомерАвтоматаДляАвтоматическогоРежимаКонтекстноеМеню" id="132"/>
+									<ExtendedTooltip name="НомерАвтоматаДляАвтоматическогоРежимаРасширеннаяПодсказка" id="189"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="ПризнакРасчетовТолькоВИнтернет" id="133">
+							<DataPath>ПризнакРасчетовТолькоВИнтернет</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПризнакРасчетовТолькоВИнтернетКонтекстноеМеню" id="134"/>
+							<ExtendedTooltip name="ПризнакРасчетовТолькоВИнтернетРасширеннаяПодсказка" id="190"/>
+						</CheckBoxField>
+						<CheckBoxField name="ПризнакШифрованиеДанных" id="135">
+							<DataPath>ПризнакШифрованиеДанных</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПризнакШифрованиеДанныхКонтекстноеМеню" id="136"/>
+							<ExtendedTooltip name="ПризнакШифрованиеДанныхРасширеннаяПодсказка" id="191"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Вспомогательная" id="153">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вспомогательная</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ВспомогательнаяРасширеннаяПодсказка" id="192"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНастройкиККТ15" id="137">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки ККТ15</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкиККТ15РасширеннаяПодсказка" id="193"/>
+							<ChildItems>
+								<CheckBoxField name="ПродажаПодакцизногоТовара" id="138">
+									<DataPath>ПродажаПодакцизногоТовара</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПродажаПодакцизногоТовараКонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="ПродажаПодакцизногоТовараРасширеннаяПодсказка" id="194"/>
+								</CheckBoxField>
+								<CheckBoxField name="ПроведенияАзартныхИгр" id="140">
+									<DataPath>ПроведенияАзартныхИгр</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПроведенияАзартныхИгрКонтекстноеМеню" id="141"/>
+									<ExtendedTooltip name="ПроведенияАзартныхИгрРасширеннаяПодсказка" id="195"/>
+								</CheckBoxField>
+								<CheckBoxField name="ПроведенияЛотерей" id="142">
+									<DataPath>ПроведенияЛотерей</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПроведенияЛотерейКонтекстноеМеню" id="143"/>
+									<ExtendedTooltip name="ПроведенияЛотерейРасширеннаяПодсказка" id="196"/>
+								</CheckBoxField>
+								<CheckBoxField name="УстановкаПринтераВАвтомате" id="144">
+									<DataPath>УстановкаПринтераВАвтомате</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="УстановкаПринтераВАвтоматеКонтекстноеМеню" id="145"/>
+									<ExtendedTooltip name="УстановкаПринтераВАвтоматеРасширеннаяПодсказка" id="197"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаФорматы" id="148">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа форматы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаФорматыРасширеннаяПодсказка" id="198"/>
+							<ChildItems>
+								<InputField name="ВерсияФФДККТ" id="149">
+									<DataPath>ВерсияФФДККТ</DataPath>
+									<ContextMenu name="ВерсияФФДККТКонтекстноеМеню" id="150"/>
+									<ExtendedTooltip name="ВерсияФФДККТРасширеннаяПодсказка" id="199"/>
+								</InputField>
+								<InputField name="ВерсияФФДФН" id="151">
+									<DataPath>ВерсияФФДФН</DataPath>
+									<ContextMenu name="ВерсияФФДФНКонтекстноеМеню" id="152"/>
+									<ExtendedTooltip name="ВерсияФФДФНРасширеннаяПодсказка" id="200"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОператорФискальныхДанных" id="64">
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оператор фискальных данных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа оператор фискальных данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаОператорФискальныхДанныхРасширеннаяПодсказка" id="201"/>
+			<ChildItems>
+				<InputField name="ОрганизацияОФДИНН" id="42">
+					<DataPath>ОрганизацияОФДИНН</DataPath>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ОрганизацияОФДИННКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="ОрганизацияОФДИННРасширеннаяПодсказка" id="202"/>
+				</InputField>
+				<InputField name="ОрганизацияОФДНазвание" id="50">
+					<DataPath>ОрганизацияОФДНазвание</DataPath>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ОрганизацияОФДНазваниеКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ОрганизацияОФДНазваниеРасширеннаяПодсказка" id="203"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа" id="13">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="204"/>
+			<ChildItems>
+				<Button name="КомандаЗакрыть" id="45">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.КомандаЗакрытьФорму</CommandName>
+					<ExtendedTooltip name="КомандаЗакрытьРасширеннаяПодсказка" id="205"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Идентификатор" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ОрганизацияНазвание" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сокращенное наименование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОрганизацияИНН" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ИНН организации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>12</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресУстановкиККТ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес установки ККТ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КодыСистемыНалогообложения" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коды системы налогообложения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПризнакАвтономногоРежима" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Признак автономного режима</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПризнакАвтоматическогоРежима" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Признак автоматического режима</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НомерАвтоматаДляАвтоматическогоРежима" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер автомата для автоматического режима</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОрганизацияОФДИНН" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ИНН ОФД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>12</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РегистрационныйНомерККТ" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистрационный номер ККТ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>16</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОрганизацияОФДНазвание" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование ОФД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФискальноеУстройство" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фискальное устройство</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПризнакРасчетовЗаУслуги" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Признак расчетов за услуги</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПризнакФормированияТолькоБСО" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Признак формирования только БСО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПризнакРасчетовТолькоВИнтернет" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Признак расчетов только в интернет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КодыСистемыНалогообложения0" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КодыСистемыНалогообложения1" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Упрощенная Доход</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КодыСистемыНалогообложения2" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Упрощенная Доход минус Расход</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КодыСистемыНалогообложения3" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Единый налог на вмененный доход</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КодыСистемыНалогообложения4" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Единый сельскохозяйственный налог</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КодыСистемыНалогообложения5" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Патентная система налогообложения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПризнакШифрованиеДанных" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Признак шифрование данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Организация" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Модель" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Модель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ТорговоеОборудование</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КассаККМ" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Касса ККМ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.КассыККМ</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="МестоПроведенияРасчетов" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Место проведения расчетов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПродажаПодакцизногоТовара" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продажа подакцизного товара</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроведенияАзартныхИгр" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проведения азартных игр</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроведенияЛотерей" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проведения лотерей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УстановкаПринтераВАвтомате" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установка принтера в автомате</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияФФДККТ" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия ФФД ККТ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияФФДФН" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия ФФД ФН</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьПодключаемоеОборудование" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать подключаемое оборудование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоддерживаемыеТипыПодключаемогоОборудования" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поддерживаемые типы подключаемого оборудования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыККТ" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры ККТ</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаЗакрытьФорму" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда закрыть форму</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаЗакрытьФорму</Action>
+		</Command>
+		<Command name="КомандаВнесение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Внесение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда внесение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаРучноеУправление</Action>
+		</Command>
+		<Command name="КомандаВыемка" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выемка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда выемка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаРучноеУправление</Action>
+		</Command>
+		<Command name="КомандаОткрытьСмену" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть смену</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда открыть смену</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаРучноеУправление</Action>
+		</Command>
+		<Command name="КомандаЗакрытьСмену" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть смену</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда закрыть смену</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаРучноеУправление</Action>
+		</Command>
+		<Command name="КомандаПолучитьТекущееСостояние" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить текущее состояние</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда получить текущее состояние</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаРучноеУправление</Action>
+		</Command>
+		<Command name="КомандаОтчетОСостоянииРасчетов" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет о состоянии расчетов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда отчет о состоянии расчетов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаРучноеУправление</Action>
+		</Command>
+		<Command name="КомандаОтчетБезГашения" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет без гашения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда отчет без гашения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаРучноеУправление</Action>
+		</Command>
+		<Command name="КомандаОткрытьДенежныйЯщик" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть денежный ящик</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда открыть денежный ящик</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаРучноеУправление</Action>
+		</Command>
+	</Commands>
+</Form>

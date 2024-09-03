@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="eac6d87f-0349-43ad-9c42-8ee609b5b519">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ПризнакиАгента" category="Ref">
+				<xr:TypeId>a32c62e0-db59-40d8-add2-0409073a9a7a</xr:TypeId>
+				<xr:ValueId>5df39d2b-7dc9-4497-b6d0-f486c3882541</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ПризнакиАгента" category="Manager">
+				<xr:TypeId>9b8eba6f-890f-4751-a3bd-30d45ff415ef</xr:TypeId>
+				<xr:ValueId>971c6e41-c602-41aa-81b6-ed418e0555f0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ПризнакиАгента" category="List">
+				<xr:TypeId>6681af49-9935-410b-b5c4-a38d22af76d9</xr:TypeId>
+				<xr:ValueId>b30f0c44-e423-40ba-9918-a3a6c2948723</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПризнакиАгента</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Признаки агента</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Order">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="88761858-7f07-41af-a5ac-909956c746bc">
+				<Properties>
+					<Name>БанковскийПлатежныйАгент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Банковский платежный агент</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Оказание услуг покупателю (клиенту) пользователем, являющимся банковским платежным агентом</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6f35fb64-8337-46b6-bf90-7c00de937f69">
+				<Properties>
+					<Name>БанковскийПлатежныйСубагент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Банковский платежный субагент</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Оказание услуг покупателю (клиенту) пользователем, являющимся банковским платежным субагентом</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5b5058fe-4e05-49ca-93e7-0e17f7e50a83">
+				<Properties>
+					<Name>ПлатежныйАгент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Платежный агент</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Оказание услуг покупателю (клиенту) пользователем, являющимся платежным агентом</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0ae92335-9ec1-4f31-8f70-23cf22e0c90b">
+				<Properties>
+					<Name>ПлатежныйСубагент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Платежный субагент</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Оказание услуг покупателю (клиенту) пользователем, являющимся платежным субагентом</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6f9e9728-cbd3-43bf-bf04-6aaad738f399">
+				<Properties>
+					<Name>Поверенный</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поверенный</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Осуществление расчета с покупателем (клиентом) пользователем, являющимся поверенным</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="eaa0dd7d-2d7a-43ca-a084-15dd5f6db42f">
+				<Properties>
+					<Name>Комиссионер</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комиссионер</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Осуществление расчета с покупателем (клиентом) пользователем, являющимся комиссионером</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8963b59a-71b5-4f7d-ad7c-550fe446da2f">
+				<Properties>
+					<Name>Агент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Агент</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Осуществление расчета с покупателем (клиентом) пользователем, являющимся агентом и не являющимся банковским платежным агентом (субагентом), платежным агентом (субагентом), поверенным, комиссионером</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

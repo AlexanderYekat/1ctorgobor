@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Create</ExcludedCommand>
+		<ExcludedCommand>Post</ExcludedCommand>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+		<ExcludedCommand>UndoPosting</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="73"/>
+			<ChildItems>
+				<InputField name="КомпютерШапка" id="58">
+					<DataPath>КомпьютерШапка</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="КомпютерШапкаКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="КомпютерШапкаРасширеннаяПодсказка" id="74"/>
+					<Events>
+						<Event name="OnChange">РеквизитШапкиПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КассаККМШапка" id="67">
+					<DataPath>КассаККМШапка</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="КассаККМШапкаКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="КассаККМШапкаРасширеннаяПодсказка" id="75"/>
+					<Events>
+						<Event name="OnChange">РеквизитШапкиПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="МодельШапка" id="41">
+					<DataPath>МодельШапка</DataPath>
+					<ClearButton>true</ClearButton>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.РабочееМесто</xr:Name>
+							<xr:DataPath xsi:type="xs:string">КомпьютерШапка</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ChoiceParameters>
+						<app:item name="Отбор.ТипОборудования">
+							<app:value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="v8:FixedArray">
+									<v8:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">4fdc847d-32ea-4204-8aff-0384bf06e4b7.faf25fcb-0835-4e6c-baed-69603a753312</Value>
+									</v8:Value>
+									<v8:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ТипыПодключаемогоОборудования.EnumValue.ФискальныйРегистратор</Value>
+									</v8:Value>
+									<v8:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">4fdc847d-32ea-4204-8aff-0384bf06e4b7.84507e6c-8d81-4499-a6b8-57ebb963db3d</Value>
+									</v8:Value>
+									<v8:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ТипыПодключаемогоОборудования.EnumValue.ККМOffline</Value>
+									</v8:Value>
+								</Value>
+							</app:value>
+						</app:item>
+					</ChoiceParameters>
+					<ContextMenu name="МодельШапкаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="МодельШапкаРасширеннаяПодсказка" id="76"/>
+					<Events>
+						<Event name="OnChange">РеквизитШапкиПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Create</ExcludedCommand>
+				<ExcludedCommand>Post</ExcludedCommand>
+				<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+				<ExcludedCommand>UndoPosting</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>true</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<ChildItems>
+					<Button name="ОткрытьКассовуюСмену" id="69">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.ОткрытьКассовуюСмену</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.Сформировать</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+							<xr:TransparentPixel x="13" y="2"/>
+						</Picture>
+						<ExtendedTooltip name="ОткрытьКассовуюСменуРасширеннаяПодсказка" id="77"/>
+					</Button>
+					<Button name="ЗакрытьКассовуюСмену" id="70">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.ЗакрытьКассовуюСмену</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.ОтчетККМСГашением</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+							<xr:TransparentPixel x="3" y="2"/>
+						</Picture>
+						<ExtendedTooltip name="ЗакрытьКассовуюСменуРасширеннаяПодсказка" id="78"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="79"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="80">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="81"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="82"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="83">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="84"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="85"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="86">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="87"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="88"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<ColumnGroup name="ГруппаДата" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дата</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дата</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ГруппаДатаРасширеннаяПодсказка" id="89"/>
+					<ChildItems>
+						<LabelField name="Дата" id="16">
+							<DataPath>Список.Date</DataPath>
+							<DefaultItem>true</DefaultItem>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="90"/>
+						</LabelField>
+						<LabelField name="ДатаСменыККТ" id="31">
+							<DataPath>Список.ДатаСменыККТ</DataPath>
+							<ContextMenu name="ДатаСменыККТКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ДатаСменыККТРасширеннаяПодсказка" id="91"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ГруппаНомер" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа номер</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа номер</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ГруппаНомерРасширеннаяПодсказка" id="92"/>
+					<ChildItems>
+						<LabelField name="Номер" id="19">
+							<DataPath>Список.Number</DataPath>
+							<ContextMenu name="НомерКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="93"/>
+						</LabelField>
+						<LabelField name="НомерСменыККТ" id="28">
+							<DataPath>Список.НомерСменыККТ</DataPath>
+							<ContextMenu name="НомерСменыККТКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="НомерСменыККТРасширеннаяПодсказка" id="94"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="Статус" id="25">
+					<DataPath>Список.Статус</DataPath>
+					<ContextMenu name="СтатусКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="95"/>
+				</LabelField>
+				<LabelField name="Организация" id="22">
+					<DataPath>Список.Организация</DataPath>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="96"/>
+				</LabelField>
+				<LabelField name="КассаККМ" id="61">
+					<DataPath>Список.КассаККМ</DataPath>
+					<ContextMenu name="КассаККМКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="КассаККМРасширеннаяПодсказка" id="97"/>
+				</LabelField>
+				<LabelField name="Модель" id="34">
+					<DataPath>Список.Модель</DataPath>
+					<ContextMenu name="МодельКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="МодельРасширеннаяПодсказка" id="98"/>
+				</LabelField>
+				<InputField name="Вид" id="65">
+					<DataPath>Список.Вид</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид оборудования</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ВидКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ВидРасширеннаяПодсказка" id="99"/>
+				</InputField>
+				<InputField name="Компьютер" id="63">
+					<DataPath>Список.Компьютер</DataPath>
+					<ContextMenu name="КомпьютерКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="КомпьютерРасширеннаяПодсказка" id="100"/>
+				</InputField>
+				<InputField name="ИдентификаторУстройства" id="71">
+					<DataPath>Список.ИдентификаторУстройства</DataPath>
+					<Visible>false</Visible>
+					<Enabled>false</Enabled>
+					<ContextMenu name="ИдентификаторУстройстваКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ИдентификаторУстройстваРасширеннаяПодсказка" id="101"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>~Список.РабочееМесто</Field>
+				<Field>~Список.ТипОборудования</Field>
+				<Field>Список.Ref</Field>
+				<Field>Список.ИдентификаторУстройства</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументКассоваяСмена.Ссылка,
+	ДокументКассоваяСмена.ВерсияДанных,
+	ДокументКассоваяСмена.ПометкаУдаления,
+	ДокументКассоваяСмена.Номер,
+	ДокументКассоваяСмена.Дата,
+	ДокументКассоваяСмена.Проведен,
+	ДокументКассоваяСмена.ДатаПервогоНепереданногоФД,
+	ДокументКассоваяСмена.ДатаСменыККТ,
+	ДокументКассоваяСмена.КассаККМ,
+	ДокументКассоваяСмена.КоличествоНепереданныхФД,
+	ДокументКассоваяСмена.КоличествоФД,
+	ДокументКассоваяСмена.КоличествоЧеков,
+	ДокументКассоваяСмена.Комментарий,
+	ДокументКассоваяСмена.НачалоКассовойСмены,
+	ДокументКассоваяСмена.НеобходимаСтрочнаяЗаменаФН,
+	ДокументКассоваяСмена.НомерСменыККТ,
+	ДокументКассоваяСмена.ОкончаниеКассовойСмены,
+	ДокументКассоваяСмена.Организация,
+	ДокументКассоваяСмена.ПамятьФНПереполнена,
+	ДокументКассоваяСмена.ПревышеноВремяОжиданияОтветаОФД,
+	ДокументКассоваяСмена.РесурсФНИсчерпан,
+	ДокументКассоваяСмена.Статус,
+	ДокументКассоваяСмена.ФДОЗакрытииСмены,
+	ЕСТЬNULL(ТорговоеОборудование.Вид, "Устройство было удалено") КАК Вид,
+	ЕСТЬNULL(ТорговоеОборудование.Модель, "Устройство было удалено") КАК Модель,
+	ЕСТЬNULL(ТорговоеОборудование.Компьютер, "Устройство было удалено") КАК Компьютер,
+	ТорговоеОборудование.Идентификатор КАК ИдентификаторУстройства
+ИЗ
+	Документ.КассоваяСмена КАК ДокументКассоваяСмена
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ТорговоеОборудование КАК ТорговоеОборудование
+		ПО ДокументКассоваяСмена.ФискальноеУстройство = ТорговоеОборудование.Идентификатор</QueryText>
+				<MainTable>Document.КассоваяСмена</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="МодельШапка" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Модель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ТорговоеОборудование</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НаФискальномУстройствеСменаНеЗакрыта" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На фискальном устройстве смена не закрыта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КассаККМШапка" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Касса ККМ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.КассыККМ</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КомпьютерШапка" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Компьютер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="мНетОшибки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>М нет ошибки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ТООшибкиОбщие</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьПодключаемоеОборудование" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать подключаемое оборудование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоддерживаемыеТипыПодключаемогоОборудования" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поддерживаемые типы подключаемого оборудования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Номер</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.НомерСменыККТ</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Дата</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.ДатаСменыККТ</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьКассовуюСмену" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть смену</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть кассовую смену</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Use>
+			<Shortcut>Shift+F9</Shortcut>
+			<Action>ОткрытьКассовуюСмену</Action>
+		</Command>
+		<Command name="ЗакрытьКассовуюСмену" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть смену</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть кассовую смену</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Use>
+			<Shortcut>Shift+F10</Shortcut>
+			<Action>ЗакрытьКассовуюСмену</Action>
+		</Command>
+	</Commands>
+</Form>
